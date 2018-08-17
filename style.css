@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: Martinesse;
+    src: url(assets/fonts/Martinesse.ttf);
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+    height: 100%;
+}
+
+.slide-1 {
+	background-image: url("assets/img/1.jpeg");
+}
+
+.slide-1-black {
+	background-image: url("assets/img/1_black.jpeg");
+}
+
+.slide-2 {
+	background-image: url("assets/img/3.jpeg");
+}
+
+.slide-4 {
+	background-image: url("assets/img/4.jpeg");
+}
+
+.slide-5 {
+	background-image: url("assets/img/5.jpeg");
+}
+
+.parallax {
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-min {
+    /* Full height */
+    height: 40%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: Martinesse;
+    color: white;
+    font-size: 50px;
+}
+
+.text {
+    font-family: Roboto;
+	color: #444;
+	background-color:white;
+	text-align:center;
+	padding:50px;
+	text-align: justify;
+}
+
+.text-black {
+    font-family: Roboto;
+	color: #fff;
+	background-color:#333;
+	text-align:center;
+	padding:50px;
+	text-align: justify;
+}
+
+.text-block {
+    height: 20%;
+    font-family: Martinesse;
+	color: #fff;
+	background-color:#333;
+	text-align:center;
+}
+
+.text-block > h1 {
+    margin: 0;
+}
