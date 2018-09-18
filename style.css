@@ -1,99 +1,300 @@
-@font-face {
-    font-family: Roboto;
-    src: url(assets/fonts/Roboto-Thin.ttf);
+@import url("https://fonts.googleapis.com/css?family=Spectral:300,400,500,600,700,800");
+
+.bold {
+  font-weight: 700;
 }
 
-@font-face {
-    font-family: Martinesse;
-    src: url(assets/fonts/Martinesse.ttf);
+.italic {
+  font-style: italic;
 }
 
-body, html {
-	margin: 0;
-	padding: 0;
-    height: 100%;
+body {
+  background: #f0f1f2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: 'Spectral', serif;
 }
 
-.slide-1 {
-	background-image: url("assets/img/1.jpeg");
+#page {
+  width: 1200px;
+  padding: 72px;
+  margin: 60px auto;
+  background: #f9f7f1;
+  box-shadow: 5px 0px 20px #ccc;
+  overflow: hidden;
 }
 
-.slide-1-black {
-	background-image: url("assets/img/1_black.jpeg");
+#header {
+  height: 120px;
+  width: 1200px;
+  padding: 18px;
+  border-top: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
 }
 
-.slide-2 {
-	background-image: url("assets/img/3.jpeg");
+.section {
+  width: 240px;
+  float: left;
 }
 
-.slide-4 {
-	background-image: url("assets/img/4.jpeg");
+.section:first-child {
+  border-right: 2px solid #aaa;
+  padding-left: 0;
 }
 
-.slide-5 {
-	background-image: url("assets/img/5.jpeg");
+.section:last-child {
+  border-left: 2px solid #aaa;
+  padding-right: 0;
+  float: right;
 }
 
-.parallax {
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.section:last-child .content {
+  float: right;
 }
 
-.parallax-min {
-    /* Full height */
-    height: 40%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.section.middle {
+  width: 600px;
+  margin: 0 auto;
 }
 
+.section .content {
+  width: 200px;
+  margin: 0;
+}
 
-.title {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-family: Martinesse;
-    color: white;
-    font-size: 50px;
+.section .content h4 {
+  margin: 0 !important;
+}
+
+.section .content p {
+  margin: 0 !important;
+}
+
+.section.middle .content {
+  width: 727.2727272727274px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section.middle h1 {
+  font-size: 100px;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 100px;
+  letter-spacing: 6px;
+}
+
+#secondary-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 18px;
+  float: left;
+  border-bottom: 2px solid #aaa;
+}
+
+.secondary-section {
+  width: 400px;
+  float: left;
+  text-align: center;
+}
+
+.secondary-section .content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.secondary-section h4 {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  text-transform: uppercase;
+}
+
+.secondary-section h3 {
+  font-size: 30px;
+  margin: 10px auto;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.secondary-section p {
+  text-align: justify;
+  text-align-last: center;
+}
+
+.secondary-section a {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: -1px;
+}
+
+#main-image {
+  width: 1200px;
+  height: 800px;
+  margin: 30px auto;
+  padding: 18px;
+  float: left;
+  background-image: url("http://bit.ly/2rFsOEF");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #f9f7f1;
+  color: #000;
+}
+
+#main-image .content {
+  width: 500px;
+  padding-left: 15px;
+}
+
+#main-image .content h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#main-image .content h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+#main-image .caption {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+#main-image p {
+  width: 260px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+#main-image a {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 600;
+  color: #8b0000;
+  letter-spacing: -1px;
+}
+
+#footer-section {
+  width: 1200px;
+  overflow: hidden;
+  border-top: 2px solid #aaa;
+  padding: 18px;
+}
+
+.right-block {
+  width: 857.1428571428572px;
+  float: left;
+  overflow: hidden;
+}
+
+.top-right-block h5,
+.bottom-right-block h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 1px solid #aaa;
+}
+
+.top-right-block .content img,
+.bottom-right-block img {
+  width: 370px;
+  height: 250px;
+  float: left;
+  padding-right: 15px;
 }
 
 .text {
-    font-family: Roboto;
-	color: #444;
-	background-color:white;
-	text-align:center;
-	padding:50px;
-	text-align: justify;
+  width: 460.752688172043px;
+  float: left;
 }
 
-.text-black {
-    font-family: Roboto;
-	color: #fff;
-	background-color:#333;
-	text-align:center;
-	padding:50px;
-	text-align: justify;
+.text h3 {
+  margin: 0 !important;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
-.text-block {
-    height: 20%;
-    font-family: Martinesse;
-	color: #fff;
-	background-color:#333;
-	text-align:center;
+.author {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize;
 }
 
-.text-block > h1 {
-    margin: 0;
+.paragraph-col {
+  width: 216px;
+  float: left;
+  text-align: justify;
+}
+
+.paragraph-col:last-child {
+  float: right;
+}
+
+.bottom-right-block {
+  float: left;
+}
+
+.bottom-right-block .content {
+  overflow: hidden;
+  float: left;
+}
+
+.bottom-right-block h3 {
+  width: 370px;
+  margin: 0 !important;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  float: left;
+}
+
+.bottom-right-block img {
+  clear: both;
+}
+
+.bottom-right-block .text p {
+  margin-top: 0;
+}
+
+.left-block {
+  width: 321.7391304347826px;
+  float: right;
+}
+
+.left-block img,
+.left-block .text,
+.left-block .paragraph-col {
+  width: 100%;
+}
+
+.left-block h3 {
+  margin: 0 !important;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.left-block h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 1px solid #aaa;
 }
